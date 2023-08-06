@@ -1,0 +1,23 @@
+package diningPhilosophers;
+
+import javax.swing.JLabel;
+
+public class Fork {
+	private int id;
+	private JLabel label;
+
+	public Fork(int id) {
+		this.id = id;
+		this.label = new JLabel();
+	}
+
+	public String toString() {
+		return "Fork " + id;
+
+	}
+
+	public JLabel getLabel() {
+		label.setText(toString());
+		return label;
+	}
+}
